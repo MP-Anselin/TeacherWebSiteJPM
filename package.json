@@ -1,6 +1,6 @@
 {
   "name": "teacher-webSite-JPM",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "React TypeScript Example App by ReactJSExample https://github.com/reactjsexample ",
   "private": true,
   "main": "index.tsx",
@@ -12,31 +12,31 @@
     "@material-ui/icons": "^4.2.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
-    "@types/jest": "24.0.17",
-    "@types/node": "12.6.9",
-    "@types/react": "16.8.24",
-    "@types/react-dom": "16.8.5",
-    "@types/react-router-dom": "^4.3.4",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.26",
+    "@types/react": "^17.0.44",
+    "@types/react-dom": "^17.0.15",
     "@types/smooth-scroll": "^16.1.1",
     "emailjs": "^3.8.1",
     "emailjs-com": "^3.2.0",
-    "node-sass": "^4.12.0",
     "query-string": "^6.8.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^5.0.1"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.6.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -54,7 +54,6 @@
     "gh-pages": "^2.1.1",
     "prettier": "^1.18.2",
     "tslint": "^5.19.0",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "3.6.2"
+    "tslint-config-prettier": "^1.18.0"
   }
 }
