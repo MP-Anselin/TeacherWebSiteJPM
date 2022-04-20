@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
+import varEnv from "../../services/endpoints.config";
+
 
 const initialState = {
     name: '',
@@ -17,10 +19,9 @@ export const Contact = (props: any) => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log(name, email, message)
         emailjs
             .sendForm(
-                'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.currentTarget, 'YOUR_USER_ID'
+                varEnv.serviceId, varEnv.templateId, e.currentTarget, varEnv.userId
             )
             .then(
                 (result: { text: any; }) => {
